@@ -1,4 +1,4 @@
-
+import Products from "./components/Products/Products";
 
 function App() {
   return (
@@ -7,11 +7,12 @@ function App() {
         <a href="/">React Shoppign Cart</a>
       </header>
       <main>
-        Our Product
+        <div className="content">
+          <div className="main"><Products/></div>
+          <div className="sidebar">Cart section</div>
+        </div>
       </main>
-      <footer>
-        All right is reserved
-      </footer>
+      <footer>All right is reserved</footer>
     </div>
   );
 }
